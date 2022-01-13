@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main_activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff202424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0.0dp"
+            android:layout_marginTop="47.0dp"
+            android:background="@drawable/card_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/back_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/places_ic_clear"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/create_nft"
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:layout_marginTop="64.0dp"
+            android:fontFamily="sans-serif"
+            android:text="Create an NFT"
+            android:textAlignment="textStart"
+            android:textColor="#ff000000"
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/step_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="sans-serif"
+            android:text="STEP 1 OF 2"
+            android:textAlignment="textStart"
+            android:textColor="#ff7f7f7f"
+            android:textSize="12.0sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/create_nft"
+            tools:ignore="HardcodedText" />
+
+        <ScrollView
+
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="158.0dp"
+            android:layout_marginBottom="96dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_box"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/step_text">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_box"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/step_text">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="72.0dp"
+                    android:layout_marginStart="2.0dp"
+                    android:layout_marginTop="250.0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/view7"
+                        android:layout_width="match_parent"
+                        android:layout_height="72.0dp"
+                        android:layout_marginStart="0.0dp"
+                        android:layout_marginTop="0.0dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/view8"
+                            android:layout_width="match_parent"
+                            android:layout_height="50.0dp"
+                            android:layout_marginStart="0.0dp"
+                            android:layout_marginTop="22.0dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/view9"
+                                android:layout_width="match_parent"
+                                android:layout_height="50.0dp"
+                                android:layout_marginStart="0.0dp"
+                                android:layout_marginTop="0.0dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"></androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <EditText
+                                android:id="@+id/et_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edittext_bg"
+                                android:fontFamily="sans-serif"
+                                android:hint="Ex. Redeemable Art"
+                                android:padding="10dp"
+                                android:imeOptions="actionNext"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textColorHint="#7f000000"
+                                android:textSize="14.0sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="HardcodedText" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3.0dp"
+                            android:fontFamily="sans-serif"
+                            android:hint=""
+                            android:text="TITLE"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textColorHint="#ff7f7f7f"
+                            android:textSize="12.0sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="HardcodedText" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/view10"
+                        android:layout_width="2.0dp"
+                        android:layout_height="23.0dp"
+                        android:layout_marginStart="13.0dp"
+                        android:layout_marginTop="37.0dp"
+                        android:background="#ff0072ce"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/view11"
+                    android:layout_width="match_parent"
+                    android:layout_height="72.0dp"
+                    android:layout_marginStart="2.0dp"
+                    android:layout_marginTop="629.0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/view12"
+                        android:layout_width="match_parent"
+                        android:layout_height="72.0dp"
+                        android:layout_marginStart="0.0dp"
+                        android:layout_marginTop="0.0dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/view13"
+                            android:layout_width="match_parent"
+                            android:layout_height="50.0dp"
+                            android:layout_marginStart="0.0dp"
+                            android:layout_marginTop="22.0dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card2"
+                                android:layout_width="match_parent"
+                                android:layout_height="50.0dp"
+                                android:layout_marginStart="0.0dp"
+                                android:layout_marginTop="0.0dp"
+                                app:cardBackgroundColor="#07000000"
+                                app:cardCornerRadius="6.0dp"
+                                app:cardElevation="0dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"></androidx.cardview.widget.CardView>
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="sans-serif"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="14.0sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="HardcodedText" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/view14"
+                            android:layout_width="16.0dp"
+                            android:layout_height="16.0dp"
+                            android:layout_marginTop="39.0dp"
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/text5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3.0dp"
+
+                            android:layout_marginTop="0.0dp"
+                            android:fontFamily="sans-serif"
+                            android:text="CATEGORY"
+                            android:textAlignment="textStart"
+                            android:textColor="#ff7f7f7f"
+                            android:textSize="12.0sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="HardcodedText" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/view15"
+                    android:layout_width="match_parent"
+                    android:layout_height="139.0dp"
+                    android:layout_marginStart="2.0dp"
+                    android:layout_marginTop="342.0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/view16"
+                        android:layout_width="match_parent"
+                        android:layout_height="139.0dp"
+                        android:layout_marginStart="0.0dp"
+                        android:layout_marginTop="0.0dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/view17"
+                            android:layout_width="match_parent"
+                            android:layout_height="117.0dp"
+                            android:layout_marginStart="0.0dp"
+                            android:layout_marginTop="22.0dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card3"
+                                android:layout_width="match_parent"
+                                android:layout_height="117.0dp"
+
+                                android:layout_marginStart="0.0dp"
+                                android:layout_marginTop="0.0dp"
+                                app:cardBackgroundColor="#07000000"
+                                app:cardCornerRadius="6.0dp"
+                                app:cardElevation="0dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"></androidx.cardview.widget.CardView>
+
+                            <EditText
+                                android:id="@+id/et_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edittext_bg"
+                                android:fontFamily="sans-serif"
+                                android:gravity="left|top"
+                                android:imeOptions="actionNext"
+                                android:hint="Ex. Redeemable Art"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="#7f000000"
+                                android:textSize="14.0sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="HardcodedText" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/text7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3.0dp"
+                            android:layout_marginTop="0.0dp"
+                            android:fontFamily="sans-serif"
+                            android:text="DESCRIPTION"
+                            android:textAlignment="textStart"
+                            android:textColor="#ff7f7f7f"
+                            android:textSize="12.0sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="HardcodedText" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/view18"
+                    android:layout_width="match_parent"
+                    android:layout_height="69.0dp"
+                    android:layout_marginStart="1.0dp"
+                    android:layout_marginTop="506.0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/view19"
+                        android:layout_width="match_parent"
+                        android:layout_height="69.0dp"
+                        android:layout_marginStart="0.0dp"
+                        android:layout_marginTop="0.0dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/view20"
+                            android:layout_width="match_parent"
+                            android:layout_height="47.0dp"
+                            android:layout_marginStart="0.0dp"
+                            android:layout_marginTop="22.0dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/view21"
+                                android:layout_width="166.0dp"
+                                android:layout_height="47.0dp"
+                                android:layout_marginStart="0.0dp"
+                                android:layout_marginTop="0.0dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card4"
+                                    android:layout_width="166.0dp"
+                                    android:layout_height="47.0dp"
+
+                                    android:layout_marginStart="0.0dp"
+                                    android:layout_marginTop="0.0dp"
+                                    app:cardBackgroundColor="#07000000"
+                                    app:cardCornerRadius="6.0dp"
+                                    app:cardElevation="0dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <EditText
+                                        android:id="@+id/et_size"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/edittext_bg"
+                                        android:backgroundTint="#07000000"
+                                        android:fontFamily="sans-serif"
+                                        android:gravity="left|center"
+                                        android:hint="Ex. Size"
+                                        android:padding="10dp"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="#7f000000"
+                                        android:textSize="14.0sp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        tools:ignore="HardcodedText" />
+
+                                </androidx.cardview.widget.CardView>
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/view22"
+                                android:layout_width="164.0dp"
+                                android:layout_height="47.0dp"
+                                android:layout_marginStart="179.0dp"
+                                android:layout_marginTop="0.0dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card5"
+                                    android:layout_width="164.0dp"
+                                    android:layout_height="47.0dp"
+                                    android:layout_marginStart="0.0dp"
+                                    android:layout_marginTop="0.0dp"
+                                    app:cardBackgroundColor="#07000000"
+                                    app:cardCornerRadius="6.0dp"
+                                    app:cardElevation="0dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <EditText
+                                        android:id="@+id/et_value"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/edittext_bg"
+                                        android:fontFamily="sans-serif"
+                                        android:gravity="left|center"
+                                        android:hint="Ex. 40"
+                                        android:padding="10dp"
+                                        android:textColor="#7f000000"
+                                        android:textColorHint="#7f000000"
+                                        android:textSize="14.0sp"
+                                        tools:ignore="HardcodedText" />
+
+                                </androidx.cardview.widget.CardView>
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/text10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3.0dp"
+                            android:fontFamily="sans-serif"
+                            android:text="PROPERTIES"
+                            android:textAlignment="textStart"
+                            android:textColor="#ff7f7f7f"
+                            android:textSize="12.0sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="HardcodedText" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="185.0dp"
+                    android:layout_marginStart="1.0dp"
+                    android:layout_marginTop="34.0dp"
+                    android:background="@drawable/_rectangle_117"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                </ImageView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/chose_image"
+                    android:layout_width="140.0dp"
+                    android:layout_height="45.0dp"
+                    android:layout_marginTop="104.0dp"
+                    android:background="@drawable/_rectangle_105"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/view25"
+                        android:layout_width="140.0dp"
+                        android:layout_height="45.0dp"
+                        android:layout_marginStart="0.0dp"
+                        android:layout_marginTop="0.0dp"
+                        android:background="@drawable/_rectangle_105"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/text11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="Choose File"
+                            android:textColor="#ff313131"
+                            android:textSize="14.0sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="HardcodedText" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif"
+                    android:text="PNG, GIF, WEBP, MP4 or MP3. Max 100mb."
+                    android:textAlignment="textStart"
+                    android:textColor="#ff7f7f7f"
+                    android:textSize="13.0sp"
+                    app:layout_constraintEnd_toEndOf="@+id/image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chose_image"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="84.0dp"
+                    android:layout_height="17.0dp"
+                    android:layout_marginStart="0.0dp"
+
+                    android:layout_marginTop="0.0dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Upload Files"
+                    android:textAlignment="textStart"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+
+                <TextView
+                    android:id="@+id/text14"
+                    android:layout_width="140.0dp"
+                    android:layout_height="20.0dp"
+                    android:layout_marginStart="5.0dp"
+
+                    android:layout_marginTop="588.0dp"
+                    android:fontFamily="sans-serif"
+                    android:text="+ Add More"
+                    android:textAlignment="textStart"
+                    android:textColor="#ff0072ce"
+                    android:textSize="14.0sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottom_box"
+            android:layout_width="match_parent"
+            android:layout_height="91.0dp"
+            android:background="@drawable/_rectangle_121"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="91.0dp"
+                android:background="@drawable/_rectangle_121"
+                android:paddingRight="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="83.0dp"
+                    android:layout_height="45.0dp"
+                    app:cardBackgroundColor="#ff000000"
+                    app:cardCornerRadius="8.0dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:text="Next"
+                        android:textColor="#ffffffff"
+                        android:textSize="14.0sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

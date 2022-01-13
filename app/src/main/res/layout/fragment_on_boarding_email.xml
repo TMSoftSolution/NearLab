@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacground"
+    tools:context=".ui.main_activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dp"
+            android:layout_marginStart="108.0dp"
+            android:layout_marginTop="304.0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view8"
+                android:layout_width="60.0dp"
+                android:layout_height="32.0dp"
+                android:layout_marginStart="108.0dp"
+                android:layout_marginTop="0.0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card0"
+                    android:layout_width="60.0dp"
+                    android:layout_height="32.0dp"
+                    android:layout_marginStart="0.0dp"
+                    android:layout_marginTop="0.0dp"
+                    app:cardBackgroundColor="#ff39c0ba"
+                    app:cardCornerRadius="4.0dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/text0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11.0dp"
+                        android:layout_marginTop="1.0dp"
+                        android:fontFamily="sans-serif"
+                        android:text="labs"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0.0dp"
+                android:layout_marginTop="0.0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="0.0dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Continue with"
+                    android:textAlignment="center"
+                    android:textColor="#ccffffff"
+                    android:textSize="14.0sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/view11"
+                    android:layout_width="match_parent"
+                    android:layout_height="58.0dp"
+                    android:layout_marginStart="2.0dp"
+                    android:layout_marginTop="97.0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/view13"
+                        android:layout_width="match_parent"
+                        android:layout_height="58.0dp"
+                        android:layout_marginStart="0.0dp"
+                        android:layout_marginTop="0.0dp"
+                        android:background="@drawable/_rectangle_101"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <EditText
+                        android:id="@+id/emailTextField"
+                        android:layout_width="270.0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center|start"
+                        android:hint="Email Address"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#ff7f7f7f"
+                        android:textCursorDrawable="@drawable/cursor_drawable"
+                        android:textFontWeight="500"
+                        android:textSize="15sp"
+                        app:hintTextColor="#ff7f7f7f"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/view15"
+                        android:layout_width="44.0dp"
+                        android:layout_height="44.0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/arrow_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/emailTextField"
+                        app:layout_constraintTop_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/forward_arrow"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                        </ImageView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14.0dp"
+                    android:layout_marginTop="175.0dp"
+                    android:fontFamily="sans-serif"
+                    android:text="by clicking continue you must agree to near labs Terms &amp; Conditions ans Privacu Policy"
+                    android:textAlignment="center"
+                    android:textColor="#82ffffff"
+                    android:textSize="12.0sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="42.0dp"
+
+                    android:layout_marginStart="0.0dp"
+                    android:layout_marginTop="35.0dp"
+                    app:cardBackgroundColor="#2bffffff"
+                    app:cardCornerRadius="8.0dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/view16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/on_board_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="0.0dp"
+                            android:layout_marginTop="0.0dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/login_bacground"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Email"
+                            android:textAlignment="center"
+                            android:textColor="#ffffffff"
+                            android:textSize="16.0sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/on_board_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Phone"
+                            android:textAlignment="center"
+                            android:textColor="#ffffffff"
+                            android:textSize="14.0sp"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/already_near_account_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="242.0dp"
+                android:fontFamily="sans-serif"
+                android:text="Already have Near Account?"
+                android:textAlignment="center"
+                android:textColor="#ccffffff"
+                android:textSize="14.0sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view17"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginStart="2.0dp"
+                android:layout_marginTop="276.0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dp"
+                    app:cardBackgroundColor="#2638c0b9"
+                    app:cardCornerRadius="8.0dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/text7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:text="Log in with NEAR"
+                        android:textColor="#ff39c0ba"
+                        android:textSize="16.0sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

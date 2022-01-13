@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff8f8f8"
+    tools:context=".ui.dasboard_activity.DashBoardActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_black_box"
+        android:layout_width="match_parent"
+        android:layout_height="184.0dp"
+        android:background="#ff202424"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/logo_text_box"
+            android:layout_width="122.5dp"
+            android:layout_height="30.0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="54.0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/logo_image"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/lab_card"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lab_card"
+                android:layout_width="43.75dp"
+                android:layout_height="23.333251953125dp"
+                android:layout_marginLeft="10dp"
+                app:cardBackgroundColor="#ff39c0ba"
+                app:cardCornerRadius="4.0dp"
+                app:cardElevation="0dp"
+                app:layout_constraintLeft_toRightOf="@id/logo_image"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/lab_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:text="labs"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view36"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dp"
+            android:layout_marginTop="47.0dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card6"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dp"
+                app:cardBackgroundColor="#33ffffff"
+                app:cardCornerRadius="20.0dp"
+                app:cardElevation="0dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginStart="8.0dp"
+                        android:layout_marginEnd="5dp"
+
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/person_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/person_icon" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/account_id"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="8"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginRight="10dp"
+                        android:text="john.near"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffffff"
+                        android:textSize="12.0sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/person_icon"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tab_bar_card"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="101.0dp"
+            app:cardBackgroundColor="#35ffffff"
+            app:cardCornerRadius="8.0dp"
+            app:cardElevation="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tabGravity="center"
+                android:background="@null"
+                app:tabIndicatorGravity="bottom"
+                android:clipToPadding="false"
+                app:tabIndicatorColor="@color/white"
+                app:tabMode="fixed"
+                app:tabTextAppearance="@style/MyCustomTabText"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextColor="@color/white">
+            </com.google.android.material.tabs.TabLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_black_box" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.qifan.powerpermission:powerpermission:1.4.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2d70887e1ab7eb5681f3618870dfc97e/jetified-powerpermission-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2d70887e1ab7eb5681f3618870dfc97e/jetified-powerpermission-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2d70887e1ab7eb5681f3618870dfc97e/jetified-powerpermission-1.4.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.qifan.powerpermission/powerpermission/1.4.0/d48de83ae65446fe8ad2a3d735250bd393e7bc2b/powerpermission-1.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.qifan.powerpermission/powerpermission/1.4.0/2b4b2b7323ecd0a9863b25b9dda40acc2d16f318/powerpermission-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

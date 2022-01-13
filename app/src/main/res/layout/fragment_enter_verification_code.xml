@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacground"
+    tools:context=".ui.main_activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0.0dp"
+            android:layout_marginTop="47.0dp"
+            android:background="@drawable/card_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view2"
+            android:layout_width="339.076171875dp"
+            android:layout_height="388.0dp"
+            android:layout_marginTop="264.0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view3"
+                android:layout_width="338.076171875dp"
+                android:layout_height="46.0dp"
+                android:layout_marginStart="1.0dp"
+                android:layout_marginTop="32.0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.github.gongw.VerifyCodeView
+                    android:id="@+id/vc_square"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:vcTextColor="@color/black"
+                    app:vcTextCount="6"
+                    app:vcTextSize="36sp"
+                    app:vcDividerWidth="8dp"
+                    app:vcWrapper="square"
+                    app:vcWrapperColor="@color/gray"
+                    app:vcNextWrapperColor="@color/blue"
+                    app:vcWrapperStrokeWidth="2dp"/>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/view11"
+                    android:layout_width="2.0dp"
+                    android:layout_height="23.0dp"
+                    android:layout_marginStart="22.0dp"
+                    android:layout_marginTop="11.0dp"
+                    android:background="#ff0072ce"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="101.0dp"
+                android:fontFamily="sans-serif"
+                android:text="Enter verification code"
+                android:textColor="#ff7f7f7f"
+                android:textSize="12.0sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view12"
+                android:layout_width="match_parent"
+                android:layout_height="273.0dp"
+                android:layout_marginStart="0.0dp"
+                android:layout_marginTop="115.0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/verify_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dp"
+                    android:enabled="false"
+                    android:text="Verify &amp; Continue"
+                    android:textColor="#ff7f7f7f"
+                    android:background="@drawable/button_light_bg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="54.0dp"
+                    android:layout_height="19.0dp"
+                    android:layout_marginStart="143.0dp"
+                    android:layout_marginTop="82.0dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Cancel"
+                    android:textAlignment="textStart"
+                    android:textColor="#ff7f7f7f"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/view13"
+                    android:layout_width="320.0dp"
+                    android:layout_height="130.0dp"
+                    android:layout_marginStart="8.0dp"
+                    android:layout_marginTop="143.0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="310.0dp"
+                        android:layout_height="19.0dp"
+                        android:layout_marginStart="0.0dp"
+
+                        android:layout_marginTop="70.0dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Send to a different email address"
+                        android:textAlignment="center"
+                        android:textColor="#ff39c0ba"
+                        android:textSize="16.0sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="310.0dp"
+                        android:layout_height="19.0dp"
+                        android:layout_marginStart="0.0dp"
+
+                        android:layout_marginTop="111.0dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Resend your code "
+                        android:textAlignment="center"
+                        android:textColor="#ff39c0ba"
+                        android:textSize="16.0sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="310.0dp"
+                        android:layout_height="20.0dp"
+                        android:layout_marginStart="5.0dp"
+
+                        android:layout_marginTop="25.0dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Didn't receive your code?
+"
+                        android:textAlignment="center"
+                        android:textColor="#ff7f7f7f"
+                        android:textSize="14.0sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="172.0dp"
+            android:fontFamily="sans-serif"
+            android:text="We've sent a 6-digit verification code to \n the email address"
+            android:textAlignment="center"
+            android:textColor="#ff7f7f7f"
+            android:textSize="14.0sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="sans-serif"
+            android:text="johndoe@gmail.com"
+            android:textAlignment="center"
+            android:textColor="#0072CE"
+            android:textSize="14.0sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text6"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:layout_marginTop="135.0dp"
+            android:fontFamily="sans-serif"
+            android:text="Enter Verification Code"
+            android:textColor="#ff000000"
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view14"
+            android:layout_width="72.91668701171875dp"
+            android:layout_height="14.583251953125dp"
+            android:layout_marginStart="134.0dp"
+            android:layout_marginTop="70.208251953125dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view15"
+                android:layout_width="72.744140625dp"
+                android:layout_height="13.897705078125dp"
+                android:layout_marginStart="0.0dp"
+                android:layout_marginTop="0.2431640625dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DEDEDE"
+            app:layout_constraintBottom_toTopOf="@+id/text7"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="30dp"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view19"
+            android:layout_width="43.75dp"
+            android:layout_height="35.0dp"
+            android:layout_marginStart="212.75dp"
+            android:layout_marginTop="62.0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card7"
+                android:layout_width="43.75dp"
+                android:layout_height="23.333251953125dp"
+
+                android:layout_marginStart="0.0dp"
+                android:layout_marginTop="3.104248046875dp"
+                app:cardBackgroundColor="#ff39c0ba"
+                app:cardCornerRadius="4.0dp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8.0208740234375dp"
+
+                android:layout_marginTop="5.0dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="labs"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

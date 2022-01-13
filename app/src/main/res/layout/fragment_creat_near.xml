@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacground"
+    tools:context=".ui.dasboard_activity.DashBoardActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="47.0dp"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/card_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/create_near_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Create NEAR account"
+                android:textAlignment="textStart"
+                android:textColor="#ff000000"
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="HardcodedText" />
+
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="10dp"
+                android:background="#DEDEDE"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/create_near_account" />
+
+
+            <TextView
+                android:id="@+id/step_text"
+                android:layout_width="70.0dp"
+                android:layout_height="19.0dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:text="STEP 1 OF 3"
+                android:textAlignment="textStart"
+                android:textColor="#ff7f7f7f"
+                android:textSize="12.0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider"
+                tools:ignore="HardcodedText"
+                tools:layout_editor_absoluteY="117dp" />
+
+
+            <TextView
+                android:id="@+id/description_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:fontFamily="sans-serif"
+                android:text="Enter an Account ID to use with your NEAR account. Your Account ID will be used for all NEAR operations, including sending and receiving assets."
+                android:textAlignment="textStart"
+                android:textColor="#ff7f7f7f"
+                android:textSize="14.0sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/step_text"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/fullname_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:fontFamily="sans-serif"
+                android:text="FULL NAME"
+                android:textAlignment="textStart"
+                android:textColor="#ff7f7f7f"
+                android:textSize="12.0sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/description_text"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/full_name_field"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:background="@drawable/edittext_bg"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_hint_color"
+                android:inputType="textPersonName"
+                android:hint="Enter full name"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fullname_id" />
+            <TextView
+                android:id="@+id/account_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:fontFamily="sans-serif"
+                android:text="ACCOUNT ID"
+                android:textAlignment="textStart"
+                android:textColor="#ff7f7f7f"
+
+                android:textSize="12.0sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/full_name_field"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/account_id_field"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_hint_color"
+                android:inputType="textPersonName"
+                android:background="@drawable/edittext_bg"
+                android:hint="yourname.near"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/account_id" />
+            <TextView
+                android:id="@+id/checkText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:fontFamily="sans-serif"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textColor="#ff7f7f7f"
+
+                android:textSize="12.0sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/account_id_field"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/id_instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Your account ID can contain any of the following:\n\n
+ • Lowercase characters (a-z)\n
+ • Digits (0-9)\n
+ • Characters (_-) can be used as separators\n
+Your account ID CANNOT contain:\n\n
+ • Characters \@ or \.\n
+ • Fewer than 2 characters\n
+ • More than 64 characters (including .near)"
+                android:textAlignment="textStart"
+                android:textColor="#ff7f7f7f"
+                android:textSize="12.0sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checkText"
+                tools:ignore="HardcodedText" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/create_button"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_light_bg"
+                android:enabled="false"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="#ff7f7f7f"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/id_instruction">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+            <TextView
+                android:id="@+id/create_bottom_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="By creating a NEAR account, you agree to the NEAR Wallet Terms of Service and Privacy Policy.
+"
+                android:textAlignment="center"
+                android:textColor="#ff7f7f7f"
+                android:textSize="12.0sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/create_button"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/already_have_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Already have an account? Sign in"
+                android:textAlignment="center"
+                android:textColor="#ff000000"
+                android:textSize="14.0sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_bottom_text"
+                tools:ignore="HardcodedText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

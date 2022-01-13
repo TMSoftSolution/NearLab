@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NFT Maker</string>
+    <string name="location_setting">Location Setting</string>
+    <string name="enableLocation">Your location seems to be disabled , do you want to enable it</string>
+    <string name="setting">Setting</string>
+    <string name="cancel">Cancel</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="login">Login!</string>
+    <string name="required_permission">Required Permission</string>
+    <string name="permission_denied_text">You have forcefully denied some of the required permission for this action. Please open settings, go to permissions and allow them.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

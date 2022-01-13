@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_nav_graph"
+    app:startDestination="@id/homeDashboardFragment">
+
+    <fragment
+        android:id="@+id/homeDashboardFragment"
+        android:name="com.nft.maker.ui.home_dashboard_fragment.HomeDashboardFragment"
+        android:label="HomeDashboardFragment"
+        tools:layout="@layout/fragment_home_dashboard">
+        <action
+            android:id="@+id/action_homeDashboardFragment_to_createNftFragment"
+            app:destination="@id/createNftFragment" />
+        <action
+            android:id="@+id/action_homeDashboardFragment_to_layoutSentNftFragment"
+            app:destination="@id/layoutSentNftFragment" />
+        <action
+            android:id="@+id/action_homeDashboardFragment_to_claimNftFragment"
+            app:destination="@id/claimNftFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNftFragment"
+        android:name="com.nft.maker.ui.create_nft_fragment.CreateNftFragment"
+        android:label="CreateNftFragment"
+        tools:layout="@layout/fragment_create_nft">
+        <action
+            android:id="@+id/action_createNftFragment_to_previewNftFragment"
+            app:destination="@id/previewNftFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/previewNftFragment"
+        android:name="com.nft.maker.ui.preview_nft_fragment.PreviewNftFragment"
+        android:label="PreviewNftFragment"
+        tools:layout="@layout/fragment_preview_nft">
+        <action
+            android:id="@+id/action_previewNftFragment_to_sendUserNftFragment"
+            app:destination="@id/sendUserNftFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/claimNftFragment"
+        android:name="com.nft.maker.ui.claim_nft_fragment.ClaimNftFragment"
+        android:label="ClaimNftFragment"
+        tools:layout="@layout/fragment_claim_nft"/>
+    <fragment
+        android:id="@+id/layoutSentNftFragment"
+        android:name="com.nft.maker.ui.layout_sent_nft_fragment.LayoutSentNftFragment"
+        android:label="LayoutSentNftFragment"
+        tools:layout="@layout/fragment_layout_sent_nft">
+        <action
+            android:id="@+id/action_layoutSentNftFragment_to_sendUserNftFragment"
+            app:destination="@id/sendUserNftFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendUserNftFragment"
+        android:name="com.nft.maker.ui.sent_user_nft_fragment.SendUserNftFragment"
+        android:label="SendUserNftFragment"
+        tools:layout="@layout/fragment_send_user_nft"/>
+</navigation>
